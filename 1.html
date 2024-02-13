@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        // Запит на введення трьох чисел
+        var num1 = parseFloat(prompt("Введіть перше число:"));
+        var num2 = parseFloat(prompt("Введіть друге число:"));
+        var num3 = parseFloat(prompt("Введіть третє число:"));
+
+        // Виведення результатів
+        var sum = num1 + num2 + num3;
+        var product = (num1 + num2) * num3;
+        var remainder = (num1 % num2) / num3;
+        var roundedResult = Math.round(num3 / num2);
+
+        document.write("<p>1. Сума трьох чисел: " + sum + "</p>");
+        document.write("<p>2. Сума перших двох чисел, помножена на третє число: " + product + "</p>");
+        document.write("<p>3. Залишок від поділу першого числа на друге, розділений на третє число: " + remainder + "</p>");
+        document.write("<p>4. Округлений до найближчого цілого результат розподілу третього числа на друге: " + roundedResult + "</p>");
+        document.write("<p>5. Моя перша програма!</p>");
+    </script>
+</body>
+</html>
